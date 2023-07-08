@@ -1,13 +1,3 @@
-# Primeiro exercício:
-# Quero que crie em python um programa que armazene os dados de usuários em um csv 
-# Dados do usuário: 
-#   Nome
-#   Idade 
-#   Sexo
-#   Nacionalidade 
-#   CPF 
-# Esses dados devem ser gerados de forma aleatória.
-
 #Importação de bibliotecas
 import numpy as np
 import pandas as pd
@@ -34,7 +24,7 @@ def criarPessoa():
         rand = np.random.randint(1,10)
         nome = nome_mulher_lista[rand]
 
-    rand = np.random.randint(1,6)
+    rand = np.random.randint(1,9)
     sobrenome = sobrenome_lista[rand]
 
     rand = np.random.randint(1,25)
@@ -50,7 +40,7 @@ def criarPessoa():
 
 qntd = int(input('Digite quantas pessoas deseja criar: '))
 pessoas = []
-for i in range(qntd-1):
+for i in range(qntd):
     pessoas.append(criarPessoa())
 
 #conversão para .CSV
